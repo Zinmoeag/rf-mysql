@@ -1,0 +1,14 @@
+ASC   A->Z
+DESC  Z->A
+
+SELECT * FROM abc
+ORDER BY colname ASC/DESC
+
+
+Default ASC
+
+---------------------------------------------------
+
+ SELECT * FROM tablename WHER condition LIMIT number;
+
+ 

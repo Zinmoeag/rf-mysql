@@ -1,0 +1,75 @@
+CREATE TABLE employees(
+ id INT NOT NULL PRIMARY KEY,
+ name VARCHAR(255),
+ email VARCAHR(255),
+ age INT,
+ address VARCHAR(255),
+ salary INT
+);
+
+
+INSERT INTO employees(id,name,email,age,address,salary)
+VALUES(1,'mya mya','myamya@gmail.com',18,200000);
+
+
+INSERT INTO employees(id,name,email,age,address,salary)
+VALUES(2,'hla hal','hlahal@gmail.com',20,'Mandalay',220000),
+(3,'kyawkyaw','kyawkyaw@gmail.com',18,'Mawlamyine',1800000),
+(4,'Aye Aye','ayeaye@gmail.com',19,'Myeik',300000),
+(5,'Kyaw Gyi','kyawgyi@gmail.com',33,Bago,3500000);
+
+
+>
+<
+=
+>=
+<=
+<>
+
+
+-------------------------------------------------------
+ 
+AND  /  OR / NOT
+
+SELECT * FROM abc
+WHERE address="Yangon" OR salary = 200000;
+
+WHERE
+
+CRUD  => CREATE / READ / UPDATE / DELETE 
+
+SELECT * FROM abc
+WHERE ...
+
+SELECT col1,col3 FROM abc
+WHER ....
+
+=
+>
+<
+>=
+<=
+<> !=
+BETWEEN
+LIKE  === =
+IN
+
+DELETE FROM tablename WHER conditon;
+DELETE FROM tablename;
+
+
+CRUD
+
+900 
+
+=> Update Data
+
+Syntax
+
+UPDATE tablename
+SET colum1=value,colum2=value,....
+WHER condition....
+
+UPDATE employees
+SET name="Ko Ko"
+WHERE id=1;

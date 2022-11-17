@@ -1,0 +1,37 @@
+
+CREATE TABLE tvs(
+brand VARCHAR(255) DEFAULT 'unnamed',
+made VARCHAR(255) DEFAULT 'japan'
+);
+
+
+INSERT INTO tvs(brand,made)
+VALUES('LGTV','USA');
+
+
+INSERT INTO tvs(brand)
+VALUES('SONY');
+
+INSERT INTO tvs(made)
+VALUES ('china');
+
+INSERT INTO tvs()
+VALUES ();
+
+
+CREATE TABLE tvs(
+brand VARCHAR(255) NOT NULL DEFAULT 'sony',
+made VARCHAR(255) NOT NULL DEFAULT 'usa'
+);
+
+INSERT INTO tvs(brand,made)
+VALUES('samsung','kore');
+
+INSERT INTO tvs(brand)
+VALUES('mi');
+
+INSERT INTO tvs()
+VALUES();
+
+INSERT INTO tvs(brnad,made)    // ** error 
+VALUES(NULL,'korea');

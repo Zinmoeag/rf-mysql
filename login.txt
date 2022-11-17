@@ -1,0 +1,36 @@
+xampp ==> shell
+
+cd => mysql
+
+cd => bin
+
+mysql -u root -p -h 127.0.0.1    // -u for username   // -p for password   // -h for host
+=>enter
+
+
+
+=> CREATE DATABASE
+CREATE DATABSE rf007;
+
+=> DELETE DATABASE
+DROP DATABASE rf007;
+
+CREATE TABLE table_names(
+	column1 datatype,
+	column2 datatype,
+	column3 datatype,
+	........
+);
+
+CREATE TABLE users(
+ id int,
+ name varchar(255),
+ address varchar(255),
+ email varchar(255)
+);
+
+=> SHOW TABLES
+DESC users;
+SHOW COLUMNS FROM users;
+
+

@@ -1,0 +1,75 @@
+CREATE TABLE users(
+id INT NOT NULL,
+username VARCHAR(255),
+age int,
+password VARCHAR(255),
+PRIMARY KEY (id)
+);
+
+CREATE TABLE users(
+id INT NOT NULL PRIMARY KEY,
+username VARCHAR(255),
+age int,
+password VARCHAR(255)
+);
+
+--------------------------------------------
+
+
+CREATE TABLE phones(
+brand VARCAHR(255) NOT NULL,
+made VARCAHR(255),
+PRIMARY KEY(brand)
+);
+
+INSERT INTO phones(brand,made)
+VALUES("iphone","usa");
+
+INSERT INTO phones(brand,made)
+VALUES("mi",'china');
+
+INSERT INTO phones(brand,made) // Duplicate entry 'iphone' for key 'PRIMARY'
+VALUES("iphone",'india');
+
+
+CREATE TABLE phones{
+  id INT NOT NULL PRIMARY KEY,
+  brand VARCHAR(255),
+  made VARCHAR(255)
+}
+
+INSERT INTO phones(brand,made)    // * error in real server // warning in localhost server
+VALUES("samsung",'korea');
+
+---------------------------------------------------------
+
+DROP TABLE phones;
+
+CREATE TABLE phones(
+ id INT NOT NULL AUTO_INCREMENT,
+ brand VARCHAR(255),
+ made VARCHAR(255),
+ PRIMARYKEY(id)
+);
+
+INSERT INTO phones(brand,made)
+VALUES("iphone",'usa');
+
+INSERT INTO phones(brand,made)
+VALUES("mi",'china');
+
+INSERT INTO phones(brand,made)
+VALUES('samsung','korea');
+
+SELECT * FROM phones;
+
+
+------------------------------------
+
+CREATE TABLE customers{
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCAHR(255),
+  email VARCHAR(255),
+  phone VARCHAR(255),
+  PRIMARY KEY(id)
+};

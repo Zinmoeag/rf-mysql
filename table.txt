@@ -1,0 +1,66 @@
+Single Data insert Syntax
+
+ Method 1
+INSERT INTO tablename (col1,col2,col3,......);
+VALUES (value1,value2,value3,....);
+
+ Method 2
+INSERT INTO tablename
+VALUES(value1,value2,value3,....);
+
+--------------------------------------------------------------
+Multi Data insert Syntax
+
+Method1
+INSERT INTO tablename(col1,col2,col3,...)
+VALUES(value1,value2,value3),
+       (value1,value2,value3),
+       (value1,value2,value3);
+
+Method2
+INSERT INTO tablename
+VALUES(val1,val2,valu3),
+      (val1,val2,val3),
+      (val1,val2,val3);
+
+
+---------------------------------------------------------------
+
+
+=>SHOW datas;
+SELECT * FROM tablename;   // ALL datas
+
+SELECT col1,col2 FROM tablename;  // as we like
+
+
+=======================================================================>
+
+INSERT INTO users(id,name,address,mail)
+VALUES (1,'kyawkyaw','Yangon','kyawkyaw@gmail.com');
+
+INSERT INTO users(id,name,address,mail)
+VALUES (2,'Hla Hla','Dawei','hlahla@gmail.com');
+
+SELECT * FROM users;
+
+INSERT INTO users(id,name,address,mail)
+VALUES (4,'Ni Ni','Mandalay','nini@gmail.com'),
+       (5,'shwe shwe','Myeik','shweshwe@gmai.com'),
+       (6,'poe poe','Yangon','poe@gmal.com');
+
+
+INSERT INTO users VALUES(7,'Min Min','USA','minmin@gmail.com');   
+
+
+INSERT INTO users VALUES(8,'Hla Hla','Yangon','hla@gmail.com'),
+                         (9,'Koe Koe','Mandalay','koe@gmail.com');    
+
+
+   customers
+
+   id  name address age phone
+
+
+   ** 20 records
+
+
